@@ -158,7 +158,7 @@ holiday_hash.map do |season, holidays|
     holiday.flatten
   end
 end 
-end
+
 
 
 
