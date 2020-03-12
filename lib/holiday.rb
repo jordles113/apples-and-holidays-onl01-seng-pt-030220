@@ -160,7 +160,7 @@ def all_holidays_with_bbq(holiday_hash)
   end.flatten
 end
 end
-all_holidays_with_bbq(holiday_supplies)
+
 
 
 
