@@ -152,12 +152,11 @@ def all_holidays_with_bbq(holiday_hash)
     :memorial_day => ["BBQ"]
   }
 }
-def all_holidays_with_bbq(holiday_hash)
-  holiday_hash.map do |season, holiday|
-    holiday.map do |holiday, supply|
-      holiday if supply.values == "BBQ"
+ holiday_hash.map do |season, holidays|
+    holidays.map do |holiday, supplies|
+      holiday if supplies.include?("BBQ")
     end
-  end.flatten
+  end.flatten.compact
 end
 end
 
