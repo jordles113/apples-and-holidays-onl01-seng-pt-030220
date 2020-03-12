@@ -111,6 +111,21 @@ winter_array = holiday_hash[:winter].values.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
+    holiday_supplies = {
+  :winter => {
+    :christmas => ["Lights", "Wreath"],
+    :new_years => ["Party Hats"]
+  },
+  :summer => {
+    :fourth_of_july => ["Fireworks", "BBQ"]
+  },
+  :fall => {
+    :thanksgiving => ["Turkey"]
+  },
+  :spring => {
+    :memorial_day => ["BBQ"]
+  }
+}
   holiday_hash.each do |season, holiday|
     puts season.to_s.capitalize! << ":"
     holiday.each do |holiday, supplies|
